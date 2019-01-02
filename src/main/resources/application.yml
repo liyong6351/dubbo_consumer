@@ -1,0 +1,15 @@
+server:
+  port: 10880
+spring:
+  application:
+    name: dubbo_demo
+  dubbo:
+    server: true
+    registry: zookeeper://47.97.26.226:2181?backup=47.97.37.1:2181,47.97.27.10:2181
+    consumer:
+      group: study
+      timeout: 300000
+    provider:
+      group: study
+
+
